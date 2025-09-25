@@ -1,0 +1,22 @@
+{
+  "name": "krvirt-docs",
+  "version": "1.0.0",
+  "description": "KRVIRT virtualization platform documentation (VitePress)",
+  "main": "index.js",
+  "scripts": {
+  "dev": "vitepress dev --open",
+  "prebuild": "npm run generate:glossary",
+  "build": "vitepress build",
+    "preview": "vitepress preview",
+  "generate:glossary": "node scripts/generate-glossary.mjs",
+  "generate:glossary:zh": "node scripts/generate-glossary.mjs --locale=zh",
+  "generate:glossary:en": "node scripts/generate-glossary.mjs --locale=en"
+  },
+  "keywords": ["KRVIRT", "virtualization", "docs", "vitepress"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "vitepress": "^2.0.0-alpha.12"
+  }
+}
