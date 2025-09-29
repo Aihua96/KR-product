@@ -1,0 +1,27 @@
+{
+  "files": [
+    {
+      "path": "krvirt/installation.md",
+      "anchors": ["安装指南", "部署文档"]
+    },
+    {
+      "path": "krcmp/deployment.md",
+      "anchors": ["安装指南", "部署文档"]
+    },
+    {
+      "path": "krdesktop/deployment.md",
+      "anchors": ["安装指南", "部署文档"]
+    },
+    {
+      "path": "krstorage/deployment.md",
+      "anchors": ["安装指南", "部署文档"]
+    }
+  ],
+  "patterns": [
+    {
+      "glob": "**/deployment.md",
+      "titleContains": "部署指南",
+      "anchors": ["安装指南", "部署文档"]
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+[
+  {
+    "name": "KRVIRT",
+    "desc": "服务器虚拟化平台",
+    "descEn": "Server Virtualization Platform",
+    "full": "KR 虚拟化平台",
+    "fullEn": "KR Virtualization Platform",
+    "lastUpdated": "2025-09-26T01:09:41+08:00",
+    "files": [
+      "README.full.md",
+      "README.md",
+      "krvirt/index.md",
+      "products/krvirt.md"
+    ],
+    "conflicts": []
+  },
+  {
+    "name": "KRCMP",
+    "desc": "云管理平台",
+    "descEn": "Cloud Management Platform",
+    "full": "KRCMP 云管理平台",
+    "fullEn": "KRCMP Cloud Management Platform",
+    "lastUpdated": "",
+    "files": [
+      "krcmp/index.md",
+      "products/krcmp.md"
+    ],
+    "conflicts": []
+  },
+  {
+    "name": "多集群",
+    "desc": "跨多个集群统一管理的能力",
+    "descEn": "Capability to manage multiple clusters uniformly",
+    "full": "多集群管理",
+    "fullEn": "Multi-Cluster Management",
+    "lastUpdated": "",
+    "files": [
+      "krcmp/index.md",
+      "products/krcmp.md"
+    ],
+    "conflicts": []
+  },
+  {
+    "name": "配额",
+    "desc": "限制与分配资源使用的控制策略",
+    "descEn": "Control policy for limiting and allocating resources",
+    "full": "资源配额",
+    "fullEn": "Resource Quota",
+    "lastUpdated": "",
+    "files": [
+      "krcmp/index.md",
+      "products/krcmp.md"
+    ],
+    "conflicts": []
+  },
+  {
+    "name": "多租户",
+    "desc": "不同租户共享底层资源但逻辑隔离",
+    "descEn": "Tenants share infrastructure but are logically isolated",
+    "full": "多租户架构",
+    "fullEn": "Multi-Tenancy",
+    "lastUpdated": "",
+    "files": [
+      "krcmp/index.md",
+      "products/krcmp.md"
+    ],
+    "conflicts": []
+  },
+  {
+    "name": "告警",
+    "desc": "针对异常状态触发的通知机制",
+    "descEn": "Notification mechanism triggered for abnormal states",
+    "full": "告警机制",
+    "fullEn": "Alerting",
+    "lastUpdated": "",
+    "files": [
+      "krcmp/index.md",
+      "products/krcmp.md"
+    ],
+    "conflicts": []
+  },
+  {
+    "name": "KRDesktop",
+    "desc": "桌面虚拟化交付平台",
+    "descEn": "Desktop Virtualization Delivery Platform",
+    "full": "KRDesktop 云桌面",
+    "fullEn": "KRDesktop Cloud Desktop",
+    "lastUpdated": "",
+    "files": [
+      "krdesktop/index.md",
+      "products/krdesktop.md"
+    ],
+    "conflicts": []
+  },
+  {
+    "name": "镜像",
+    "desc": "创建虚拟机或桌面模板的基础介质",
+    "descEn": "Base media to create VM / desktop templates",
+    "full": "镜像",
+    "fullEn": "Image",
+    "lastUpdated": "2025-09-26T01:09:41+08:00",
+    "files": [
+      "krdesktop/index.md",
+      "krvirt/quick-start.md",
+      "products/krdesktop.md"
+    ],
+    "conflicts": []
+  },
+  {
+    "name": "弹性扩缩",
+    "desc": "根据负载自动扩容或缩容资源",
+    "descEn": "Automatically scale resources based on workload",
+    "full": "弹性伸缩",
+    "fullEn": "Autoscaling",
+    "lastUpdated": "",
+    "files": [
+      "krdesktop/index.md",
+      "products/krdesktop.md"
+    ],
+    "conflicts": []
+  },
+  {
+    "name": "多媒体优化",
+    "desc": "降低音视频传输延迟的协议与策略",
+    "descEn": "Protocols and strategies to reduce A/V latency",
+    "full": "多媒体优化",
+    "fullEn": "Multimedia Optimization",
+    "lastUpdated": "",
+    "files": [
+      "krdesktop/index.md",
+      "products/krdesktop.md"
+    ],
+    "conflicts": []
+  },
+  {
+    "name": "桌面池",
+    "desc": "按策略批量管理桌面实例的逻辑集合",
+    "descEn": "Logical collection managing desktops in batch by policy",
+    "full": "桌面池",
+    "fullEn": "Desktop Pool",
+    "lastUpdated": "",
+    "files": [
+      "krdesktop/index.md",
+      "products/krdesktop.md"
+    ],
+    "conflicts": []
+  },
+  {
+    "name": "KRStorage",
+    "desc": "统一存储管理系统",
+    "descEn": "Unified Storage Management System",
+    "full": "KRStorage 存储管理系统",
+    "fullEn": "KRStorage Storage Management System",
+    "lastUpdated": "",
+    "files": [
+      "krstorage/index.md",
+      "products/krstorage.md"
+    ],
+    "conflicts": []
+  },
+  {
+    "name": "存储后端",
+    "desc": "被平台接入并提供容量的实际存储系统",
+    "descEn": "Actual storage system providing capacity",
+    "full": "存储后端",
+    "fullEn": "Storage Backend",
+    "lastUpdated": "",
+    "files": [
+      "krstorage/index.md",
+      "products/krstorage.md"
+    ],
+    "conflicts": []
+  },
+  {
+    "name": "容量",
+    "desc": "可供分配或使用的存储空间总量",
+    "descEn": "Total storage space available for allocation or usage",
+    "full": "存储容量",
+    "fullEn": "Storage Capacity",
+    "lastUpdated": "",
+    "files": [
+      "krstorage/index.md",
+      "products/krstorage.md"
+    ],
+    "conflicts": []
+  },
+  {
+    "name": "快照",
+    "desc": "某一时间点的数据副本用于回滚或克隆",
+    "descEn": "Point-in-time data copy for rollback or clone",
+    "full": "数据快照",
+    "fullEn": "Snapshot",
+    "lastUpdated": "",
+    "files": [
+      "krstorage/index.md",
+      "products/krstorage.md"
+    ],
+    "conflicts": []
+  },
+  {
+    "name": "副本",
+    "desc": "同一数据的多份冗余存储拷贝",
+    "descEn": "Redundant copies of the same data",
+    "full": "数据副本",
+    "fullEn": "Replica",
+    "lastUpdated": "",
+    "files": [
+      "krstorage/index.md",
+      "products/krstorage.md"
+    ],
+    "conflicts": []
+  },
+  {
+    "name": "虚拟化",
+    "desc": "通过抽象层将物理资源转换为逻辑资源的技术",
+    "descEn": "Technology to abstract physical resources into logical resources",
+    "full": "虚拟化",
+    "fullEn": "Virtualization",
+    "lastUpdated": "2025-09-26T01:09:41+08:00",
+    "files": [
+      "krvirt/index.md",
+      "products/krvirt.md"
+    ],
+    "conflicts": []
+  },
+  {
+    "name": "调度",
+    "desc": "资源分配到合适节点的策略过程",
+    "descEn": "Strategy process assigning workloads to proper nodes",
+    "full": "调度",
+    "fullEn": "Scheduling",
+    "lastUpdated": "2025-09-26T01:09:41+08:00",
+    "files": [
+      "krvirt/index.md",
+      "products/krvirt.md"
+    ],
+    "conflicts": []
+  },
+  {
+    "name": "快速开始",
+    "desc": "引导用户完成最小可用路径",
+    "descEn": "Guide for minimum viable path",
+    "full": "快速开始",
+    "fullEn": "Quick Start",
+    "lastUpdated": "2025-09-26T01:09:41+08:00",
+    "files": [
+      "krvirt/quick-start.md"
+    ],
+    "conflicts": []
+  },
+  {
+    "name": "节点",
+    "desc": "承载工作负载的物理主机",
+    "descEn": "Physical host carrying workloads",
+    "full": "节点",
+    "fullEn": "Node",
+    "lastUpdated": "2025-09-26T01:09:41+08:00",
+    "files": [
+      "krvirt/quick-start.md"
+    ],
+    "conflicts": []
+  }
+]

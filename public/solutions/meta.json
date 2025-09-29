@@ -1,0 +1,82 @@
+[
+  {
+    "schemaVersion": 2,
+    "id": "xinchuang-adaptation",
+    "title": "国产信创适配方案",
+    "category": "场景",
+    "industries": [
+      "政务与应急"
+    ],
+    "tags": [
+      "适配",
+      "兼容测试",
+      "迁移"
+    ],
+    "updated": "2025-09-28T05:05:16.693Z",
+    "path": "/solutions/xinchuang-adaptation",
+    "contact": true
+  },
+  {
+    "schemaVersion": 2,
+    "id": "unified-cloud",
+    "title": "统一云管理方案",
+    "category": "场景",
+    "industries": [
+      "政务与应急",
+      "制造"
+    ],
+    "tags": [
+      "资源编排",
+      "策略统一",
+      "成本计量"
+    ],
+    "updated": "2025-09-28T05:05:16.693Z",
+    "path": "/solutions/unified-cloud",
+    "contact": true
+  },
+  {
+    "schemaVersion": 2,
+    "id": "mobile-emergency",
+    "title": "移动应急算力保障方案",
+    "category": "场景",
+    "industries": [
+      "政务与应急"
+    ],
+    "tags": [
+      "边缘",
+      "安全接入",
+      "远程运维"
+    ],
+    "updated": "2025-09-28T05:52:26.792Z",
+    "path": "/solutions/mobile-emergency",
+    "contact": true
+  },
+  {
+    "schemaVersion": 2,
+    "id": "multi-cloud-scheduling",
+    "title": "multi-cloud-scheduling",
+    "category": "场景",
+    "industries": [],
+    "tags": [],
+    "updated": "2025-09-28T05:05:16.694Z",
+    "path": "/solutions/multi-cloud-scheduling",
+    "contact": true
+  },
+  {
+    "schemaVersion": 2,
+    "id": "nerf-compute",
+    "title": "NeRF 建模算力方案",
+    "category": "场景",
+    "industries": [
+      "空间信息"
+    ],
+    "tags": [
+      "GPU",
+      "缓存",
+      "调度"
+    ],
+    "updated": "2025-09-28T05:05:16.694Z",
+    "path": "/solutions/nerf-compute",
+    "contact": true
+  }
+]

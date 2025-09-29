@@ -1,0 +1,33 @@
+{
+  "krvirt": {
+    "order": 1,
+    "links": [
+      { "key": "deploy", "zh": "部署指南", "en": "Deployment", "href": "/krvirt/installation", "icon": "🚀" },
+      { "key": "quick", "zh": "快速开始", "en": "Quick Start", "href": "/krvirt/quick-start", "icon": "⚡" },
+      { "key": "config", "zh": "配置说明", "en": "Configuration", "href": "/krvirt/configuration", "icon": "🛠" },
+      { "key": "api", "zh": "API 参考", "en": "API Reference", "href": "/krvirt/api-reference", "icon": "🧩" },
+      { "key": "troubleshooting", "zh": "故障排除", "en": "Troubleshooting", "href": "/krvirt/troubleshooting", "icon": "🩺" }
+    ]
+  },
+  "krcmp": {
+    "order": 2,
+    "links": [
+      { "key": "deploy", "zh": "部署指南", "en": "Deployment", "href": "/krcmp/deployment", "icon": "🚀" },
+      { "key": "quick", "zh": "快速上手", "en": "Quick Start", "href": "/krcmp/quick-start", "icon": "⚡" }
+    ]
+  },
+  "krdesktop": {
+    "order": 3,
+    "links": [
+      { "key": "deploy", "zh": "部署指南", "en": "Deployment", "href": "/krdesktop/deployment", "icon": "🚀" },
+      { "key": "quick", "zh": "快速上手", "en": "Quick Start", "href": "/krdesktop/quick-start", "icon": "⚡" }
+    ]
+  },
+  "krstorage": {
+    "order": 4,
+    "links": [
+      { "key": "deploy", "zh": "部署指南", "en": "Deployment", "href": "/krstorage/deployment", "icon": "🚀" },
+      { "key": "quick", "zh": "快速上手", "en": "Quick Start", "href": "/krstorage/quick-start", "icon": "⚡" }
+    ]
+  }
+}

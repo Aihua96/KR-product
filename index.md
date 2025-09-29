@@ -12,6 +12,9 @@ hero:
     - theme: alt
       text: 快速开始
       link: /krvirt/quick-start
+    - theme: alt
+      text: 进入帮助中心
+      link: /help/
 features:
   - title: KRVIRT瞰融服务器虚拟化系统
     details: 企业级服务器与桌面统一虚拟化平台，提供高性能与安全隔离。
@@ -21,10 +24,16 @@ features:
     details: 安装、配置、API、故障排查一站式文档。
 ---
 
+<LanguageSwitch />
+
+> 想要快速横向比较产品能力？请访问 **[产品矩阵 /products/](/products/)**。需要按业务场景查找落地方案？前往 **[解决方案中心 /solutions/](/solutions/)**。
+
+<HomeQuickEntries />
+
 ## 快速导航
 
 - [KRVIRT 产品介绍](/krvirt/)
-- [安装指南](/krvirt/installation)
+- [部署指南](/krvirt/installation)
 - [配置说明](/krvirt/configuration)
 - [故障排除](/krvirt/troubleshooting)
 - [API 参考](/krvirt/api-reference)

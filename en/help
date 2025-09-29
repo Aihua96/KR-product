@@ -1,0 +1,16 @@
+# Help Center (Overview)
+
+> Placeholder: central entry for four product lines. Will aggregate release notes, unified search description, quick links.
+
+## Product Navigation
+
+| Product | Description | Quick Links |
+|---------|-------------|-------------|
+| KRVIRT | Virtualization Platform | [Overview](/en/krvirt/) · Quick Start (planned) · [Deployment Guide](/en/krvirt/deployment) |
+| KRCMP | Cloud Mgmt / Multi-cluster Governance | [Overview](/en/krcmp/) · Quick Start (planned) · [Deployment Guide](/en/krcmp/deployment) |
+| KRDesktop | Cloud Desktop / App Delivery | [Overview](/en/krdesktop/) · Quick Start (planned) · [Deployment Guide](/en/krdesktop/deployment) |
+| KRStorage | Unified Storage Management | [Overview](/en/krstorage/) · Quick Start (planned) · [Deployment Guide](/en/krstorage/deployment) |
+
+## Common Resources
+- Glossary (planned)
+- Release Notes (planned)

@@ -1,4 +1,21 @@
+---
+title: KRVIRT 产品介绍
+description: KRVIRT 虚拟化平台简介、特性与文档导航。
+lastUpdated: true
+---
+
 # KRVIRT 产品介绍
+
+<div class="page-updated"><Updated /></div>
+
+<!-- legacy-anchor -->
+<h2 id="概览" style="display:none">概览</h2>
+<!-- legacy-anchor -->
+<h2 id="核心特性占位" style="display:none">核心特性占位</h2>
+<!-- legacy-anchor -->
+<h2 id="典型架构占位" style="display:none">典型架构占位</h2>
+<!-- legacy-anchor -->
+<h2 id="许可模式占位" style="display:none">许可模式占位</h2>
 
 欢迎来到 KRVIRT 文档中心！ <Term name="KRVIRT" desc="服务器虚拟化平台" descEn="Server Virtualization Platform" full="KR 虚拟化平台" fullEn="KR Virtualization Platform" />
 
@@ -19,7 +36,7 @@ KRVIRT 是一个满足信创要求的服务器虚拟化平台。<Term name="虚�
 
 ## 文档导航
 
-- [安装指南](./installation)
+- [部署指南](./installation)
 - [配置说明](./configuration)
 - [故障排除](./troubleshooting)
 - [快速开始](./quick-start)

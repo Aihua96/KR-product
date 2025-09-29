@@ -1,0 +1,208 @@
+:root {
+  /* 语义色，可根据品牌调整 */
+  --kr-matrix-header-bg: #0f172a;
+  --kr-matrix-header-color: #f1f5f9;
+  --kr-matrix-row-hover: #f1f5f9;
+  --kr-matrix-border: #e2e8f0;
+  --kr-matrix-accent: #2563eb;
+  --kr-matrix-shadow: 0 2px 4px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+}
+
+/* Unified updated timestamp block */
+.page-updated { 
+  font-size: 0.85rem; 
+  opacity: .75; 
+  margin: -4px 0 1.2rem; 
+}
+.dark .page-updated { opacity: .65; }
+
+.dark {
+  --kr-matrix-header-bg: #1e293b;
+  --kr-matrix-header-color: #e2e8f0;
+  --kr-matrix-row-hover: rgba(255,255,255,0.04);
+  --kr-matrix-border: #334155;
+  --kr-matrix-accent: #3b82f6;
+  --kr-matrix-shadow: 0 2px 6px rgba(0,0,0,0.45), 0 6px 16px rgba(0,0,0,0.3);
+}
+
+/* =====================
+   通用过滤工具栏 (产品矩阵 & 解决方案共用)
+   命名空间: pm-*
+   ===================== */
+.pm-toolbar { 
+  border: 1px solid var(--vp-c-divider); 
+  border-radius: 10px; 
+  padding: 12px 14px 10px; 
+  background: var(--vp-c-bg-soft); 
+  margin: 1.2rem 0 1.4rem; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px; 
+}
+.pm-row { display:flex; flex-wrap:wrap; align-items:center; gap:8px; }
+.pm-row-label { font-size:12px; font-weight:600; letter-spacing:.5px; opacity:.75; }
+.pm-search-box { position: relative; display:flex; align-items:center; }
+.pm-input { padding:6px 30px 6px 10px; border:1px solid var(--vp-c-divider); background: var(--vp-c-bg); border-radius:6px; font-size:13px; min-width:240px; }
+.pm-input:focus { outline:1px solid var(--vp-c-brand); }
+.pm-clear-search { position:absolute; right:4px; top:50%; transform:translateY(-50%); background:transparent; border:none; font-size:11px; padding:2px 6px; cursor:pointer; opacity:.6; }
+.pm-clear-search:hover { opacity:1; color: var(--vp-c-brand); }
+.pm-tags { display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+.pm-tag-btn { border:1px solid var(--vp-c-divider); background: var(--vp-c-bg); padding:4px 10px; border-radius:999px; font-size:12px; cursor:pointer; line-height:1; }
+.pm-tag-btn.active { background: var(--vp-c-brand); color: var(--vp-c-bg); border-color: var(--vp-c-brand); }
+.pm-clear, .pm-clear-status { background:transparent; border:1px dashed var(--vp-c-divider); padding:4px 10px; font-size:11px; border-radius:14px; cursor:pointer; }
+.pm-clear:hover, .pm-clear-status:hover { background: var(--vp-c-danger-soft, #ffecec); color: var(--vp-c-danger, #d93025); }
+.pm-tag-mode { display:flex; gap:10px; margin-left:4px; font-size:11px; align-items:center; }
+.pm-tag-mode label { display:flex; gap:4px; align-items:center; cursor:pointer; }
+.pm-status-filter { display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+.pm-status-opt { display:flex; gap:4px; font-size:12px; align-items:center; cursor:pointer; }
+.pm-row-search { order:-1; }
+
+/* 紧凑行间距在窄屏下合并 */
+@media (max-width: 720px) {
+  .pm-toolbar { padding:10px 10px 8px; gap:8px; }
+  .pm-input { min-width:180px; }
+  .pm-row { gap:6px; }
+  .pm-tag-btn { padding:4px 8px; font-size:11px; }
+}
+
+/* 暗色适配 */
+.dark .pm-toolbar { background: var(--vp-c-bg-alt); }
+.dark .pm-tag-btn { background: var(--vp-c-bg); }
+.dark .pm-tag-btn.active { color:#fff; }
+.pm-actions { display:flex; flex-wrap:wrap; gap:.5rem; }
+.pm-export { font-size:12px; padding:6px 10px; border:1px solid var(--vp-c-divider); background:var(--vp-c-bg); border-radius:6px; cursor:pointer; }
+.pm-export:hover { background: var(--vp-c-bg-soft); border-color: var(--vp-c-brand); color: var(--vp-c-brand); }
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 0.75rem 0 1.25rem;
+  border: 1px solid var(--kr-matrix-border);
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: var(--kr-matrix-shadow);
+}
+
+.table-wrap table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.table-wrap thead th {
+  background: var(--kr-matrix-header-bg);
+  color: var(--kr-matrix-header-color);
+  font-weight: 600;
+  padding: 10px 14px;
+  position: sticky;
+  top: 0;
+  white-space: nowrap;
+}
+
+.table-wrap tbody td {
+  padding: 10px 14px;
+  border-top: 1px solid var(--kr-matrix-border);
+  vertical-align: top;
+}
+
+.table-wrap tbody tr:hover td {
+  background: var(--kr-matrix-row-hover);
+}
+
+.table-wrap tbody td:first-child {
+  font-weight: 600;
+  color: #0f172a;
+  width: 14%;
+}
+
+.dark .table-wrap tbody td:first-child { color: #f1f5f9; }
+
+.dark .table-wrap { background: #0f172a; }
+.dark .table-wrap tbody td { background: transparent; }
+.dark .table-wrap tbody tr:hover td { background: rgba(148,163,184,0.08); }
+.dark .product-tag { background: rgba(59,130,246,0.15); color: var(--kr-matrix-accent); }
+
+.product-tag {
+  display: inline-block;
+  background: #eff6ff;
+  color: var(--kr-matrix-accent);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 6px;
+  letter-spacing: .5px;
+  margin-left: 4px;
+}
+
+/* Language Switch */
+.lang-switch { text-align:right; margin: -4px 0 12px; }
+.lang-switch a { font-size:13px; text-decoration:none; padding:4px 10px; border:1px solid var(--vp-c-divider); border-radius:4px; transition: background .15s; }
+.lang-switch a:hover { background: var(--vp-c-bg-soft); }
+
+/* Home Quick Entries */
+.home-quick-entries { margin: 2.5rem 0 1.5rem; }
+.home-quick-entries .hq-title { font-size: 14px; font-weight:600; letter-spacing:.5px; color: var(--vp-c-text-2); margin-bottom:.75rem; text-transform: uppercase; }
+.home-quick-entries .hq-grid { display:grid; gap:12px; grid-template-columns: repeat(auto-fill,minmax(180px,1fr)); }
+.home-quick-entries .hq-item { display:flex; align-items:center; gap:6px; padding:10px 12px; border:1px solid var(--vp-c-divider); border-radius:8px; text-decoration:none; font-size:14px; position:relative; background: var(--vp-c-bg-soft); transition: border-color .15s, background .15s; }
+.home-quick-entries .hq-item:hover { border-color: var(--vp-c-brand); background: var(--vp-c-bg-alt); }
+.home-quick-entries .hq-icon { font-size:16px; }
+.home-quick-entries .hq-prod { margin-left:auto; font-size:11px; font-weight:600; opacity:.55; }
+
+@media (max-width: 640px) {
+  .home-quick-entries .hq-grid { grid-template-columns: repeat(auto-fill,minmax(140px,1fr)); }
+}
+
+/* 响应式：在较窄视口使用紧凑处理 */
+@media (max-width: 780px) {
+  .table-wrap table,
+  .table-wrap thead,
+  .table-wrap tbody,
+  .table-wrap th,
+  .table-wrap td,
+  .table-wrap tr { display: block; }
+
+  .table-wrap thead { display: none; }
+
+  .table-wrap tbody tr { 
+    margin: .75rem 0; 
+    border: 1px solid var(--kr-matrix-border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .table-wrap tbody td { 
+    border: none; 
+    padding: 6px 10px; 
+    position: relative; 
+    background: #fff;
+  }
+  .table-wrap tbody td:first-child { 
+    background: var(--kr-matrix-header-bg); 
+    color: var(--kr-matrix-header-color); 
+    border-bottom: 1px solid var(--kr-matrix-border); 
+    width: auto; 
+  }
+  .table-wrap tbody td::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: #475569;
+  }
+}
+
+/* =====================
+  Footer artifact fix
+  移除底部出现的白色矩形（疑似 BackToTop 或其占位）
+  2025-09: 旧版 footer large QR / friend links 样式已彻底移除，如需回溯请查看 git 历史
+  ===================== */
+#VPBackToTop, .VPBackToTop, .back-to-top { 
+  display: none !important; 
+  opacity: 0 !important; 
+  pointer-events: none !important; 
+}
+
+/* 若仍出现，可临时启用以下调试：在控制台加 document.body.classList.add('kr-debug-footer') */
+.kr-debug-footer * { outline:1px solid rgba(255,0,0,.15); }

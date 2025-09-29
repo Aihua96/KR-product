@@ -4,19 +4,33 @@
   "description": "KRVIRT virtualization platform documentation (VitePress)",
   "main": "index.js",
   "scripts": {
-  "dev": "vitepress dev --open",
-  "prebuild": "npm run generate:glossary",
-  "build": "vitepress build",
+    "dev": "vitepress dev --open",
+    "validate:readme": "node scripts/validate-readme.mjs --file=README.md",
+    "check:anchors": "node scripts/check-legacy-anchors.mjs",
+    "prebuild": "npm run validate:readme && npm run validate:products && npm run validate:quick-links && npm run generate:solutions:meta && npm run generate:glossary && npm run check:anchors",
+    "build": "vitepress build",
     "preview": "vitepress preview",
-  "generate:glossary": "node scripts/generate-glossary.mjs",
-  "generate:glossary:zh": "node scripts/generate-glossary.mjs --locale=zh",
-  "generate:glossary:en": "node scripts/generate-glossary.mjs --locale=en"
+    "generate:glossary": "node scripts/generate-glossary.mjs",
+    "generate:glossary:zh": "node scripts/generate-glossary.mjs --locale=zh",
+    "generate:glossary:en": "node scripts/generate-glossary.mjs --locale=en",
+    "generate:solutions:meta": "node scripts/generate-solutions-meta.mjs",
+    "generate:products:matrix": "node scripts/generate-products-matrix.mjs",
+    "validate:products": "node scripts/validate-products.mjs",
+    "validate:quick-links": "node scripts/validate-quick-links.mjs",
+    "ci:check": "node scripts/check-glossary-integrity.mjs && npm run build"
   },
-  "keywords": ["KRVIRT", "virtualization", "docs", "vitepress"],
+  "keywords": [
+    "KRVIRT",
+    "virtualization",
+    "docs",
+    "vitepress"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "element-plus": "^2.11.4",
+    "gray-matter": "^4.0.3",
     "vitepress": "^2.0.0-alpha.12"
   }
 }
