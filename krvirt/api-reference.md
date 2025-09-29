@@ -1,6 +1,12 @@
 # API 参考
 
-> 占位页面：后续将补充常用接口说明与示例。
+---
+footer: false
+---
+
+# API 参考 <Term name="API" desc="应用程序接口" descEn="Application Programming Interface" full="应用程序接口" fullEn="API" />
+
+> 占位页面：RESTful API 参考文档。
 
 ## 计划
 - 认证

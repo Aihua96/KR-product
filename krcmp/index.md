@@ -2,6 +2,7 @@
 title: KRCMP 云管理平台
 description: KRCMP 云管理平台统一管理多集群与资源的功能简介与导航。
 lastUpdated: true
+footer: false
 ---
 
 # KRCMP 云管理平台

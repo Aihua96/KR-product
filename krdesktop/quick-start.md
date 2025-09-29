@@ -1,3 +1,7 @@
+---
+footer: false
+---
+
 # 快速上手（KRDesktop）
 
 > 最小可用路径（占位）。

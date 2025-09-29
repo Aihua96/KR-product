@@ -2,6 +2,7 @@
 title: KRStorage 存储管理系统
 description: KRStorage 存储管理系统产品介绍、功能亮点与文档导航。
 lastUpdated: true
+footer: false
 ---
 
 # KRStorage 存储管理系统

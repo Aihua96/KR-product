@@ -2,6 +2,7 @@
 title: KRVIRT 产品介绍
 description: KRVIRT 虚拟化平台简介、特性与文档导航。
 lastUpdated: true
+footer: false
 ---
 
 # KRVIRT 产品介绍

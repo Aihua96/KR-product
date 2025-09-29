@@ -1,3 +1,7 @@
+---
+footer: false
+---
+
 <!-- legacy anchors -->
 <span id="安装指南" style="display:none"></span>
 <span id="部署文档" style="display:none"></span>

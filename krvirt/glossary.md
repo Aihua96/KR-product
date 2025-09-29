@@ -1,3 +1,7 @@
+---
+footer: false
+---
+
 <!--
 	本文件支持自动生成。
 	约定：由脚本 `npm run generate:glossary` 扫描仓库中形如 <Term name="KRVIRT" desc="..." /> 的标记并写入

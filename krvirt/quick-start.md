@@ -1,3 +1,7 @@
+---
+footer: false
+---
+
 # 快速开始 <Term name="快速开始" desc="引导用户完成最小可用路径" descEn="Guide for minimum viable path" full="快速开始" fullEn="Quick Start" />
 
 > 占位页面：帮助中心快速入门指引。

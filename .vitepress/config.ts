@@ -67,6 +67,7 @@ export default defineConfig({
       // 新增『产品』一级导航，匹配各产品与概览页面
       { text: '产品', link: '/products/', activeMatch: '^/(products|krvirt|krcmp|krdesktop|krstorage)/' },
       { text: '解决方案', link: '/solutions/', activeMatch: '^/solutions/' },
+        { text: '合作伙伴', link: '/partners/', activeMatch: '^/partners/' },
       {
         text: '帮助中心',
         items: [

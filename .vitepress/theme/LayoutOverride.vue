@@ -15,19 +15,33 @@ import DefaultTheme from 'vitepress/theme'
 const { Layout } = DefaultTheme
 import SiteFooter from './components/SiteFooter.vue'
 import SolutionsDocAfter from './components/SolutionsDocAfter.vue'
-import { useRoute } from 'vitepress'
+import { useRoute, useData } from 'vitepress'
 import { computed } from 'vue'
 
 const route = useRoute()
+const { frontmatter } = useData()
 const showSolutionsAfter = computed(()=> route.path.startsWith('/solutions/') && route.path !== '/solutions/')
 
 // 隐藏页脚的路径前缀（含多语言占位）
-const footerHiddenPrefixes = ['/products','/solutions','/help','/en/products','/en/solutions','/en/help']
-const showFooter = computed(()=> !footerHiddenPrefixes.some(p => route.path === p || route.path.startsWith(p + '/')) )
+const footerHiddenPrefixes = ['/products','/solutions','/help','/krvirt','/krcmp','/krdesktop','/krstorage','/en/products','/en/solutions','/en/help','/en/krvirt','/en/krcmp','/en/krdesktop','/en/krstorage']
+const showFooter = computed(() => {
+  // 如果 frontmatter 中明确设置了 footer: false，则不显示页脚
+  if (frontmatter.value.footer === false) {
+    return false
+  }
+  // 检查路径前缀
+  return !footerHiddenPrefixes.some(p => route.path === p || route.path.startsWith(p + '/'))
+})
 </script>
 
 <style scoped>
 .kr-custom-layout :deep(.kr-site-footer){
   /* 可在此添加与主体间的额外分隔 */
+}
+.aside-content{
+  overflow: hidden;
+}
+.aside-container{
+  overflow: hidden;
 }
 </style>

@@ -48,5 +48,7 @@
 - 建议后续分类子目录：`solutions/categories/`、`solutions/industries/`、`solutions/capabilities/`
 - 可添加一个自定义组件做多标签过滤（需要自定义 theme 增量开发）。
 
+- [合作伙伴](/partners/index.md)
+
 ---
 _本页为初始占位，等待业务确认后迭代。_

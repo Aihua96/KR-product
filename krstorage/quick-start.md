@@ -1,3 +1,7 @@
+---
+footer: false
+---
+
 # 快速上手（KRStorage）
 
 > 示例最小路径（占位）。

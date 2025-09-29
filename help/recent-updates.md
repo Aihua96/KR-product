@@ -1,3 +1,7 @@
+---
+footer: false
+---
+
 # 最近更新 (自动生成)
 
 <!-- RECENT-UPDATES:BEGIN -->

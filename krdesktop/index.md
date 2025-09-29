@@ -2,6 +2,7 @@
 title: KRDesktop 云桌面
 description: KRDesktop 云桌面产品介绍、功能亮点与文档导航。
 lastUpdated: true
+footer: false
 ---
 
 # KRDesktop 云桌面
