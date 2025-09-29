@@ -23,3 +23,4 @@ lastUpdated: true
 <h2 id="核心特性占位" style="display:none"></h2>
 <h2 id="典型架构占位" style="display:none"></h2>
 <h2 id="许可模式占位" style="display:none"></h2>
+<!-- adafagag -->
