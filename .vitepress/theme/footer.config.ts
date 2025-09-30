@@ -38,6 +38,7 @@ export const footerConfig: FooterConfig = {
     {
       title: '解决方案',
       links: [
+        { label: '智能算力平台', href: '/solutions/intelligent-compute-platform' },
         { label: '统一云管理', href: '/solutions/unified-cloud' },
         { label: '国产信创适配', href: '/solutions/xinchuang-adaptation' },
         { label: '移动应急算力', href: '/solutions/mobile-emergency' },

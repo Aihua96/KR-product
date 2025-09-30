@@ -1,13 +1,7 @@
 <template>
-  <div v-if="showCTA">
-    <ContactCTA />
-  </div>
+  <!-- 方案页底部 CTA 已按需求移除，占位组件保留避免引用报错 -->
+  <div class="solutions-doc-after" />
 </template>
 <script setup lang="ts">
-import { useData } from 'vitepress'
-import ContactCTA from './ContactCTA.vue'
-
-const { page } = useData()
-const fm: any = page.value.frontmatter || {}
-const showCTA = fm.contact !== false
+// 保留空脚本
 </script>

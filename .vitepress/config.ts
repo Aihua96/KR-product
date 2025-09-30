@@ -105,6 +105,7 @@ export default defineConfig({
           text: '场景方案',
           collapsed: false,
           items: [
+            { text: '智能算力平台方案', link: '/solutions/intelligent-compute-platform' },
             { text: '统一云管理方案', link: '/solutions/unified-cloud' },
             { text: '国产信创适配方案', link: '/solutions/xinchuang-adaptation' },
             { text: '移动应急算力保障', link: '/solutions/mobile-emergency' },
