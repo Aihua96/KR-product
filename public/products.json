@@ -103,7 +103,7 @@
     "id": "proxmox-ve",
     "nameZh": "Proxmox VE 服务器虚拟化",
     "nameEn": "Proxmox VE",
-    "version": "7.x/8.x",
+  "version": "v8.0",
     "status": "GA",
     "tags": [
       "virtualization",
