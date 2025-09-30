@@ -27,7 +27,9 @@
 
 Proxmox Virtual Environment是一个开源的企业级服务器虚拟化管理平台。将 KVM 虚拟机管理程序和 Linux 容器 （LXC）、软件定义存储和网络功能紧密集成在一个平台上。借助基于 Web 的集成用户界面，您可以轻松管理虚拟机和容器、集群的高可用性或集成的灾难恢复工具。
 
-[了解更多](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview)
+![alt text](image.png)
+
+[了解更多（点击链接可跳转至Proxmox VE官方地址）](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview)
 
 
 
