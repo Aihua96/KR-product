@@ -206,3 +206,95 @@
 
 /* 若仍出现，可临时启用以下调试：在控制台加 document.body.classList.add('kr-debug-footer') */
 .kr-debug-footer * { outline:1px solid rgba(255,0,0,.15); }
+
+/* =====================
+   Remove VitePress scroll-fade mask at edges
+   说明：默认主题可能对文档/侧栏列表添加 mask-image 渐隐以提示可滚，
+         当滚到页面底部时会残留“渐变条”。统一移除这些 mask。
+   ===================== */
+.VPDoc .content .content-container,
+.VPDoc.has-aside .content .content-container,
+.VPSidebar .items,
+.aside-container,
+.aside-content {
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+  background-image: none !important;
+}
+
+/* Remove default theme gradient block that lingers under the aside nav */
+.aside-curtain {
+  display: none !important;
+  background: none !important;
+  height: 0 !important;
+}
+
+/* 进一步移除默认主题的 spacer 渐隐背景，防止底部出现白色过渡条 */
+.spacer,
+.VPDoc .spacer,
+.VPLocalNav .spacer,
+.VPSidebar .spacer {
+  background: transparent !important;
+  background-image: none !important;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+}
+
+/* =====================
+   Debug and fix for blue positioned elements at bottom
+   调试和修复底部蓝色定位元素问题
+   ===================== */
+
+/* 强制移除所有可能的固定定位蓝色元素 */
+[style*="position: fixed"],
+[style*="position:fixed"],
+.fixed,
+.VPNav .divider,
+.VPLocalNav,
+.VPSidebar .curtain {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* 特别针对可能的蓝色背景元素 */
+[style*="#2563eb"],
+[style*="rgb(37, 99, 235)"],
+[class*="blue"],
+[style*="blue"] {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* 移除任何可能的底部遮罩层 */
+.VPDoc::after,
+.VPContent::after,
+.vp-doc::after,
+body::after,
+html::after {
+  display: none !important;
+}
+
+/* 确保页面容器没有异常背景 */
+.VPContent,
+.VPDoc,
+.vp-doc,
+.content-container {
+  background: transparent !important;
+  position: relative !important;
+}
+
+/* 调试模式：为页面添加轮廓以识别问题元素 */
+.kr-debug-elements * {
+  outline: 1px solid rgba(255, 0, 0, 0.3) !important;
+}
+
+.kr-debug-elements [style*="position: fixed"],
+.kr-debug-elements [style*="position:fixed"] {
+  outline: 3px solid rgba(0, 255, 0, 0.8) !important;
+}
+
+.kr-debug-elements [style*="blue"],
+.kr-debug-elements [style*="#2563eb"] {
+  outline: 3px solid rgba(255, 255, 0, 0.8) !important;
+}
