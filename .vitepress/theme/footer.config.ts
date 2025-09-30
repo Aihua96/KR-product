@@ -18,6 +18,7 @@ export interface FooterConfig {
   contact?: {
     phone?: string
     address?: string
+    email?: string
     // future: email, support link, etc.
   }
   qrCodes?: Array<{ label: string; img: string; alt?: string; short?: string; icon?: string }>
@@ -61,8 +62,8 @@ export const footerConfig: FooterConfig = {
     {
       title: '公司',
       links: [
-        { label: '加入我们(占位)', href: '/products/krvirt#licensing-placeholder' },
-        { label: '更新日志', href: '/help/recent-updates' }
+        { label: '公司介绍', href: '/about/company' },
+        { label: '加入我们', href: '/about/join' }
       ]
     }
   ],
@@ -81,7 +82,8 @@ export const footerConfig: FooterConfig = {
   contact: {
     phone: '+86-021-61659316',
     // 企业地址：总部 + 办事处概览（用户 2025-09 提供最新版）
-    address: '上海总部：上海市浦东新区浦三路3058号长青企业广场295-297室\n大区办事处：华北办事处、 西北办事处、 西南办事处、 新疆办事处'
+    address: '上海总部：上海市浦东新区浦三路3058号长青企业广场295-297室\n大区：华北办事处、 西北办事处、 西南办事处、 新疆办事处',
+    email: 'market@kanrong.xyz'
   },
   qrCodes: [
     { label: '微信公众号', short: '微', icon: 'wechat', img: '/qrcode-wechat-official.png', alt: '微信公众号二维码' },

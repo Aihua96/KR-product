@@ -89,6 +89,14 @@ export default defineConfig({
           { text: 'KRDesktop', link: '/krdesktop/', activeMatch: '^/krdesktop/' },
           { text: 'KRStorage', link: '/krstorage/', activeMatch: '^/krstorage/' }
         ]
+      },
+      {
+        text: '关于我们',
+        activeMatch: '^/about/',
+        items: [
+          { text: '公司介绍', link: '/about/company' },
+          { text: '加入我们', link: '/about/join' }
+        ]
       }
     ],
     

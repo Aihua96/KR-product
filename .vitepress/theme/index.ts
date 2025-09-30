@@ -11,6 +11,7 @@ import ProductQuickLinks from './components/ProductQuickLinks.vue'
 import ProductStatusBar from './components/ProductStatusBar.vue'
 import Updated from './components/Updated.vue'
 import Term from './components/Term.vue'
+import AboutHero from './components/AboutHero.vue'
 import { h } from 'vue'
 import LayoutOverride from './LayoutOverride.vue'
 
@@ -31,6 +32,7 @@ const theme: Theme = {
     ctx.app.component('ProductStatusBar', ProductStatusBar)
     ctx.app.component('Updated', Updated)
     ctx.app.component('Term', Term)
+  ctx.app.component('AboutHero', AboutHero)
   },
   Layout: () => h(LayoutOverride)
 }

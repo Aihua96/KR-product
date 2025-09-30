@@ -22,6 +22,10 @@
                 <span class="kr-contact-label">服务热线：</span>
                 <a :href="'tel:' + rawPhone(cfg.contact.phone)" class="kr-contact-value kr-contact-link">{{ cfg.contact.phone }}</a>
               </li>
+              <li v-if="cfg.contact.email">
+                <span class="kr-contact-label">邮箱：</span>
+                <a :href="'mailto:' + cfg.contact.email" class="kr-contact-value kr-contact-link">{{ cfg.contact.email }}</a>
+              </li>
             </ul>
           </div>
           <div class="kr-social-icons">
@@ -201,7 +205,9 @@ const formattedAddress = computed(() => (cfg.contact?.address || '').replace(/\n
 /* 列表化后的联系我们与其它列统一：ul/li 样式 */
 .kr-mini-contact { margin-bottom:12px; }
 .kr-contact-list { list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:6px; font-size:14px; line-height:1.6; }
-.kr-contact-list li { color:var(--kr-footer-link,#9aa0aa); }
+.kr-contact-list li { color:var(--kr-footer-link,#9aa0aa); line-height:1.6; }
+.kr-contact-value br { line-height:1.0; content:""; } /* 避免 <br> 造成行距塌陷或过大 */
+.kr-contact-value { line-height:1.55; display:inline-block; }
 .kr-contact-label { color:var(--kr-footer-meta,#8c939c); margin-right:4px; }
 .kr-contact-value { color:var(--kr-footer-link,#9aa0aa); }
 .kr-contact-link { text-decoration:none; }
