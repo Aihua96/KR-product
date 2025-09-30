@@ -113,6 +113,7 @@ export default defineConfig({
           text: '产品介绍',
           collapsed: false,
           items: [
+            { text: 'Proxmox VE', link: '/products/proxmox-ve' },
             { text: 'KRVIRT 虚拟化平台', link: '/products/krvirt' },
             { text: 'KRCMP 云管理平台', link: '/products/krcmp' },
             { text: 'KRDesktop 云桌面', link: '/products/krdesktop' },
