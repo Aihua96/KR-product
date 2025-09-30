@@ -8,7 +8,6 @@ lastUpdated: true
 
 > 本页内容由原产品站点 /krstorage/ 概览整合，仅用于“产品介绍”模块集中展示。 <Term name="KRStorage" desc="统一存储管理系统" descEn="Unified Storage Management System" full="KRStorage 存储管理系统" fullEn="KRStorage Storage Management System" />
 
-<div class="page-updated">更新时间：{{ $frontmatter.lastUpdated || (typeof $page !== 'undefined' && $page.lastUpdated) || '' }}</div>
 
 ## 功能亮点
 - 多后端驱动接入 <Term name="存储后端" desc="被平台接入并提供容量的实际存储系统" descEn="Actual storage system providing capacity" full="存储后端" fullEn="Storage Backend" />

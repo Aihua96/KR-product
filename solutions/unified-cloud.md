@@ -6,7 +6,6 @@ contact: true
 ---
 # 统一云管理方案
 
-<div class="page-updated"><Updated /></div>
 
 ## 1. 背景与挑战
 待补充：多虚拟化 / 容器 / 裸金属分散管理，资源利用率低、权限模型碎片化、计量不统一。

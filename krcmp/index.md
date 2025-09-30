@@ -7,7 +7,6 @@ footer: false
 
 # KRCMP 云管理平台
 
-<div class="page-updated"><Updated /></div>
 
 <!-- legacy-anchor -->
 <h2 id="概览" style="display:none">概览</h2>

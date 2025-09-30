@@ -23,3 +23,5 @@ yarn-error.log*
 .env
 .env.local
 .env.production
+# Ignore large marketing PDFs
+素材/*.pdf

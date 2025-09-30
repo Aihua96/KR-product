@@ -6,7 +6,6 @@ lastUpdated: true
 
 # KRDesktop Cloud Desktop
 
-<div class="page-updated"><Updated /></div>
 
 > Placeholder English introduction page aggregated under Product Intro group.
 

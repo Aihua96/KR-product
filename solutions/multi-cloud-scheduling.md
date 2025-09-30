@@ -1,10 +1,5 @@
-title: 多云智能算力调度方案
-industries: [通用]
-tags: [多云, 调度, 成本优化]
-contact: true
 # 多云智能算力调度方案
 
-<div class="page-updated"><Updated /></div>
 
 ## 1. 背景与挑战
 待补充：多云/多区域成本差异 & SLA 差异，手工分配资源低效。

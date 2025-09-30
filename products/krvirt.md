@@ -8,7 +8,6 @@ lastUpdated: true
 
 > 本页内容由原产品站点 /krvirt/ 概览整合，仅用于“产品介绍”模块集中展示。
 
-<div class="page-updated">更新时间：{{ $frontmatter.lastUpdated || (typeof $page !== 'undefined' && $page.lastUpdated) || '' }}</div>
 
 欢迎来到 KRVIRT 文档中心！ <Term name="KRVIRT" desc="服务器虚拟化平台" descEn="Server Virtualization Platform" full="KR 虚拟化平台" fullEn="KR Virtualization Platform" />
 

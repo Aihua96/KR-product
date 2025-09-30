@@ -6,7 +6,6 @@ contact: true
 ---
 # 国产信创适配方案
 
-<div class="page-updated"><Updated /></div>
 
 ## 1. 背景与挑战
 待补充：多架构（国产 CPU / OS / 数据库 / 中间件）适配复杂，迁移风险高。

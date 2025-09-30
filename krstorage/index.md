@@ -7,7 +7,6 @@ footer: false
 
 # KRStorage 存储管理系统
 
-<div class="page-updated"><Updated /></div>
 
 <!-- legacy-anchor -->
 <h2 id="概览" style="display:none">概览</h2>

@@ -8,7 +8,6 @@ lastUpdated: true
 
 > 本页内容由原产品站点 /krdesktop/ 概览整合，仅用于“产品介绍”模块集中展示。 <Term name="KRDesktop" desc="桌面虚拟化交付平台" descEn="Desktop Virtualization Delivery Platform" full="KRDesktop 云桌面" fullEn="KRDesktop Cloud Desktop" />
 
-<div class="page-updated">更新时间：{{ $frontmatter.lastUpdated || (typeof $page !== 'undefined' && $page.lastUpdated) || '' }}</div>
 
 ## 功能亮点
 - 集中镜像管理 <Term name="镜像" desc="创建虚拟机或桌面模板的基础介质" descEn="Base media to create VM / desktop templates" full="镜像" fullEn="Image" />

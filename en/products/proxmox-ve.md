@@ -1,6 +1,6 @@
 ---
 title: Proxmox VE Virtualization
-description: Overview of Proxmox Virtual Environment: value, core capabilities, scenarios, architecture, and subscription advantages.
+description: "Overview of Proxmox Virtual Environment: value, core capabilities, scenarios, architecture, and subscription advantages."
 lastUpdated: true
 ---
 

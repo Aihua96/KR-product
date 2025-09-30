@@ -16,6 +16,9 @@
 }
 .dark .page-updated { opacity: .65; }
 
+/* Hide all updated timestamp blocks per requirement */
+.page-updated { display:none !important; }
+
 .dark {
   --kr-matrix-header-bg: #1e293b;
   --kr-matrix-header-color: #e2e8f0;

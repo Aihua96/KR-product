@@ -6,7 +6,6 @@ lastUpdated: true
 
 # KRVIRT Platform
 
-<div class="page-updated"><Updated /></div>
 
 > Placeholder English introduction page aggregated under Product Intro group.
 

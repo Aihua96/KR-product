@@ -15,7 +15,6 @@ productMatrixColumns:
 
 # 产品概览
 
-<div class="page-updated"><Updated /></div>
 
 这里汇总瞰融信息核心产品及入口，便于快速浏览与跳转，并提供功能/场景/部署形态快速对比。
 

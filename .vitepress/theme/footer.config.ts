@@ -32,7 +32,7 @@ export const footerConfig: FooterConfig = {
         { label: 'KRCMP 云管理', href: '/products/krcmp' },
         { label: 'KRDesktop 云桌面', href: '/products/krdesktop' },
         { label: 'KRStorage 存储', href: '/products/krstorage' },
-        { label: '产品概览', href: '/products/' }
+        { label: '更多产品', href: '/products/' }
       ]
     },
     {
@@ -43,13 +43,14 @@ export const footerConfig: FooterConfig = {
         { label: '移动应急算力', href: '/solutions/mobile-emergency' },
         { label: 'NeRF 建模算力', href: '/solutions/nerf-compute' },
         { label: '多云智能调度', href: '/solutions/multi-cloud-scheduling' },
-        { label: '全部方案', href: '/solutions/' }
+        { label: '更多解决方案', href: '/solutions/' }
       ]
     },
     {
       title: '帮助中心',
       links: [
         { label: '总览', href: '/help/' },
+        { label: '常见问题', href: '/help/faq' },
         { label: 'KRVIRT', href: '/krvirt/' },
         { label: 'KRCMP', href: '/krcmp/' },
         { label: 'KRDesktop', href: '/krdesktop/' },
@@ -60,8 +61,7 @@ export const footerConfig: FooterConfig = {
       title: '公司',
       links: [
         { label: '加入我们(占位)', href: '/products/krvirt#licensing-placeholder' },
-        { label: '更新日志', href: '/help/recent-updates' },
-        { label: '常见问题', href: '/help/faq' }
+        { label: '更新日志', href: '/help/recent-updates' }
       ]
     }
   ],
@@ -79,7 +79,8 @@ export const footerConfig: FooterConfig = {
   },
   contact: {
     phone: '+86-021-61659316',
-    address: '上海市浦东新区浦三路3058号长青企业广场295-297室'
+    // 企业地址：总部 + 办事处概览（用户 2025-09 提供最新版）
+    address: '上海总部：上海市浦东新区浦三路3058号长青企业广场295-297室\n大区办事处：华北办事处、 西北办事处、 西南办事处、 新疆办事处'
   },
   qrCodes: [
     { label: '微信公众号', short: '微', icon: 'wechat', img: '/qrcode-wechat-official.png', alt: '微信公众号二维码' },

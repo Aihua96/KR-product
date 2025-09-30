@@ -7,7 +7,6 @@ footer: false
 
 # KRDesktop 云桌面
 
-<div class="page-updated"><Updated /></div>
 
 <!-- legacy-anchor -->
 <h2 id="概览" style="display:none">概览</h2>

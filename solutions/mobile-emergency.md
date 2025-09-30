@@ -7,7 +7,6 @@ contact: true
 
 # 移动应急算力保障方案
 
-<div class="page-updated"><Updated /></div>
 
 ## 1. 背景与挑战
 待补充：突发事件/野外/临时指挥调度对快速交付与链路安全要求高。

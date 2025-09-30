@@ -13,7 +13,6 @@ productMatrixColumns:
 
 # Products Overview
 
-<div class="page-updated"><Updated /></div>
 
 This page provides an interactive matrix comparing the core product lines. You can:
 

@@ -6,7 +6,6 @@ contact: true
 ---
 # NeRF 建模算力方案
 
-<div class="page-updated"><Updated /></div>
 
 ## 1. 背景与挑战
 待补充：NeRF/3D 重建训练耗时长、GPU 异构资源碎片化、数据 IO 成瓶颈。

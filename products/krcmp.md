@@ -8,7 +8,6 @@ lastUpdated: true
 
 > 本页内容由原产品站点 /krcmp/ 概览整合，仅用于“产品介绍”模块集中展示。 <Term name="KRCMP" desc="云管理平台" descEn="Cloud Management Platform" full="KRCMP 云管理平台" fullEn="KRCMP Cloud Management Platform" />
 
-<div class="page-updated">更新时间：{{ $frontmatter.lastUpdated || (typeof $page !== 'undefined' && $page.lastUpdated) || '' }}</div>
 
 ## 功能亮点
 - 多集群统一纳管 <Term name="多集群" desc="跨多个集群统一管理的能力" descEn="Capability to manage multiple clusters uniformly" full="多集群管理" fullEn="Multi-Cluster Management" />
