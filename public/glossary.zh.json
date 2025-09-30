@@ -5,7 +5,7 @@
     "descEn": "Server Virtualization Platform",
     "full": "KR 虚拟化平台",
     "fullEn": "KR Virtualization Platform",
-    "lastUpdated": "2025-09-26T01:09:41+08:00",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
     "files": [
       "README.full.md",
       "README.md",
@@ -20,7 +20,7 @@
     "descEn": "Cloud Management Platform",
     "full": "KRCMP 云管理平台",
     "fullEn": "KRCMP Cloud Management Platform",
-    "lastUpdated": "",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
     "files": [
       "krcmp/index.md",
       "products/krcmp.md"
@@ -33,7 +33,7 @@
     "descEn": "Capability to manage multiple clusters uniformly",
     "full": "多集群管理",
     "fullEn": "Multi-Cluster Management",
-    "lastUpdated": "",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
     "files": [
       "krcmp/index.md",
       "products/krcmp.md"
@@ -46,7 +46,7 @@
     "descEn": "Control policy for limiting and allocating resources",
     "full": "资源配额",
     "fullEn": "Resource Quota",
-    "lastUpdated": "",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
     "files": [
       "krcmp/index.md",
       "products/krcmp.md"
@@ -59,7 +59,7 @@
     "descEn": "Tenants share infrastructure but are logically isolated",
     "full": "多租户架构",
     "fullEn": "Multi-Tenancy",
-    "lastUpdated": "",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
     "files": [
       "krcmp/index.md",
       "products/krcmp.md"
@@ -72,7 +72,7 @@
     "descEn": "Notification mechanism triggered for abnormal states",
     "full": "告警机制",
     "fullEn": "Alerting",
-    "lastUpdated": "",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
     "files": [
       "krcmp/index.md",
       "products/krcmp.md"
@@ -85,7 +85,7 @@
     "descEn": "Desktop Virtualization Delivery Platform",
     "full": "KRDesktop 云桌面",
     "fullEn": "KRDesktop Cloud Desktop",
-    "lastUpdated": "",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
     "files": [
       "krdesktop/index.md",
       "products/krdesktop.md"
@@ -98,7 +98,7 @@
     "descEn": "Base media to create VM / desktop templates",
     "full": "镜像",
     "fullEn": "Image",
-    "lastUpdated": "2025-09-26T01:09:41+08:00",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
     "files": [
       "krdesktop/index.md",
       "krvirt/quick-start.md",
@@ -112,7 +112,7 @@
     "descEn": "Automatically scale resources based on workload",
     "full": "弹性伸缩",
     "fullEn": "Autoscaling",
-    "lastUpdated": "",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
     "files": [
       "krdesktop/index.md",
       "products/krdesktop.md"
@@ -125,7 +125,7 @@
     "descEn": "Protocols and strategies to reduce A/V latency",
     "full": "多媒体优化",
     "fullEn": "Multimedia Optimization",
-    "lastUpdated": "",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
     "files": [
       "krdesktop/index.md",
       "products/krdesktop.md"
@@ -138,7 +138,7 @@
     "descEn": "Logical collection managing desktops in batch by policy",
     "full": "桌面池",
     "fullEn": "Desktop Pool",
-    "lastUpdated": "",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
     "files": [
       "krdesktop/index.md",
       "products/krdesktop.md"
@@ -151,7 +151,7 @@
     "descEn": "Unified Storage Management System",
     "full": "KRStorage 存储管理系统",
     "fullEn": "KRStorage Storage Management System",
-    "lastUpdated": "",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
     "files": [
       "krstorage/index.md",
       "products/krstorage.md"
@@ -164,7 +164,7 @@
     "descEn": "Actual storage system providing capacity",
     "full": "存储后端",
     "fullEn": "Storage Backend",
-    "lastUpdated": "",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
     "files": [
       "krstorage/index.md",
       "products/krstorage.md"
@@ -177,7 +177,7 @@
     "descEn": "Total storage space available for allocation or usage",
     "full": "存储容量",
     "fullEn": "Storage Capacity",
-    "lastUpdated": "",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
     "files": [
       "krstorage/index.md",
       "products/krstorage.md"
@@ -190,7 +190,7 @@
     "descEn": "Point-in-time data copy for rollback or clone",
     "full": "数据快照",
     "fullEn": "Snapshot",
-    "lastUpdated": "",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
     "files": [
       "krstorage/index.md",
       "products/krstorage.md"
@@ -203,10 +203,22 @@
     "descEn": "Redundant copies of the same data",
     "full": "数据副本",
     "fullEn": "Replica",
-    "lastUpdated": "",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
     "files": [
       "krstorage/index.md",
       "products/krstorage.md"
+    ],
+    "conflicts": []
+  },
+  {
+    "name": "API",
+    "desc": "应用程序接口",
+    "descEn": "Application Programming Interface",
+    "full": "应用程序接口",
+    "fullEn": "API",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
+    "files": [
+      "krvirt/api-reference.md"
     ],
     "conflicts": []
   },
@@ -216,7 +228,7 @@
     "descEn": "Technology to abstract physical resources into logical resources",
     "full": "虚拟化",
     "fullEn": "Virtualization",
-    "lastUpdated": "2025-09-26T01:09:41+08:00",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
     "files": [
       "krvirt/index.md",
       "products/krvirt.md"
@@ -229,7 +241,7 @@
     "descEn": "Strategy process assigning workloads to proper nodes",
     "full": "调度",
     "fullEn": "Scheduling",
-    "lastUpdated": "2025-09-26T01:09:41+08:00",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
     "files": [
       "krvirt/index.md",
       "products/krvirt.md"
@@ -242,7 +254,7 @@
     "descEn": "Guide for minimum viable path",
     "full": "快速开始",
     "fullEn": "Quick Start",
-    "lastUpdated": "2025-09-26T01:09:41+08:00",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
     "files": [
       "krvirt/quick-start.md"
     ],
@@ -254,7 +266,7 @@
     "descEn": "Physical host carrying workloads",
     "full": "节点",
     "fullEn": "Node",
-    "lastUpdated": "2025-09-26T01:09:41+08:00",
+    "lastUpdated": "2025-09-29T18:10:04+08:00",
     "files": [
       "krvirt/quick-start.md"
     ],
