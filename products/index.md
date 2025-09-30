@@ -54,7 +54,8 @@ productMatrixColumns:
 ## 产品列表（说明版）
 
 ### 快速跳转（产品介绍）
-
+ 
+- [Proxmox VE服务器虚拟化](/products/proxmox-ve)
 - [KRVIRT 虚拟化平台](/products/krvirt)
 - [KRCMP 云管理平台](/products/krcmp)
 - [KRDesktop 云桌面](/products/krdesktop)
