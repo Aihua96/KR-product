@@ -48,6 +48,7 @@ export default defineConfig({
             {
               text: 'Product Intro', collapsed: false, items: [
                 { text: 'KRVIRT Platform', link: '/en/products/krvirt' },
+                { text: 'Proxmox VE', link: '/en/products/proxmox-ve' },
                 { text: 'KRCMP Cloud Mgmt', link: '/en/products/krcmp' },
                 { text: 'KRDesktop', link: '/en/products/krdesktop' },
                 { text: 'KRStorage', link: '/en/products/krstorage' }
@@ -65,7 +66,18 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/', activeMatch: '^/$' },
       // 新增『产品』一级导航，匹配各产品与概览页面
-      { text: '产品', link: '/products/', activeMatch: '^/(products|krvirt|krcmp|krdesktop|krstorage)/' },
+      { 
+        text: '产品', 
+        activeMatch: '^/(products|krvirt|krcmp|krdesktop|krstorage|proxmox-ve)/',
+        items: [
+          { text: '产品概览', link: '/products/' },
+          { text: 'Proxmox VE', link: '/products/proxmox-ve' },
+          { text: 'KRVIRT 虚拟化平台', link: '/products/krvirt' },
+          { text: 'KRCMP 云管理平台', link: '/products/krcmp' },
+          { text: 'KRDesktop 云桌面', link: '/products/krdesktop' },
+          { text: 'KRStorage 存储管理系统', link: '/products/krstorage' }
+        ]
+      },
       { text: '解决方案', link: '/solutions/', activeMatch: '^/solutions/' },
         { text: '合作伙伴', link: '/partners/', activeMatch: '^/partners/' },
       {

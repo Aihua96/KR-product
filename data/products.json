@@ -67,4 +67,21 @@
     "deployEn": "Standalone or embedded",
     "link": "/krstorage/"
   }
+  ,{
+    "id": "proxmox-ve",
+    "nameZh": "Proxmox VE 服务器虚拟化",
+    "nameEn": "Proxmox VE",
+    "version": "7.x/8.x",
+    "status": "GA",
+    "tags": ["virtualization","open-source","hypervisor"],
+    "positioningZh": "开源企业级虚拟化与资源整合平台",
+    "positioningEn": "Open-source enterprise virtualization & consolidation",
+    "scenariosZh": "私有云 / 边缘节点 / 容器+VM 混合部署",
+    "scenariosEn": "Private cloud / Edge / Mixed VM+Container",
+    "capabilitiesZh": "KVM+LXC 双栈、HA、实时迁移、Ceph/ZFS、备份",
+    "capabilitiesEn": "KVM+LXC, HA, live migration, Ceph/ZFS, backup",
+    "deployZh": "单节点起步，平滑扩展多节点集群",
+    "deployEn": "Single node to multi-node cluster",
+    "link": "/products/proxmox-ve"
+  }
 ]
