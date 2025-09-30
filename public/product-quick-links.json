@@ -29,5 +29,12 @@
       { "key": "deploy", "zh": "部署指南", "en": "Deployment", "href": "/krstorage/deployment", "icon": "🚀" },
       { "key": "quick", "zh": "快速上手", "en": "Quick Start", "href": "/krstorage/quick-start", "icon": "⚡" }
     ]
+  },
+  "proxmox-ve": {
+    "order": 5,
+    "links": [
+      { "key": "overview", "zh": "产品介绍", "en": "Overview", "href": "/products/proxmox-ve", "icon": "🧱" },
+      { "key": "learn", "zh": "深入了解", "en": "Learn More", "href": "https://www.proxmox.com/en/products/proxmox-virtual-environment/overview", "icon": "📘" }
+    ]
   }
 }

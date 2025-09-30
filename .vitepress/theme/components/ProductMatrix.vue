@@ -86,6 +86,10 @@ interface ProductItem {
   capabilitiesEn: string
   deployZh: string
   deployEn: string
+  licenseZh?: string
+  licenseEn?: string
+  subscriptionZh?: string
+  subscriptionEn?: string
   link: string
   tags: string[]
   version?: string
@@ -100,10 +104,13 @@ const list = ref<ProductItem[]>([])
 const keyword = ref('')
 let selectedTags = ref<Set<string>>(new Set())
 let selectedStatuses = ref<string[]>([])
+// 产品列排序：支持名称 + 自定义标签优先级（当处于 null 状态时，仍使用我们定义的默认权重排序以保证展示稳定）
+const productSort = ref<'asc'|'desc'|null>(null)
 // 2025-09: 表格视觉简化，移除列 hover / clamp / sticky 等高级特性
 
 // 固定列顺序（列选择已移除，2025-09 移除 link 列以避免单独“跳转”行）
-const defaultColumns = ['name','positioning','scenarios','capabilities','deploy','version','status','tags']
+// 2025-09: 新增 license / subscription 列
+const defaultColumns = ['name','positioning','scenarios','capabilities','deploy','license','subscription','version','status','tags']
 const activeColumns = ref<string[]>(defaultColumns.slice())
 
 // Persistence (旧分散键 + 新聚合键)
@@ -124,7 +131,7 @@ if (typeof window !== 'undefined') {
       if (Array.isArray(data.tags)) selectedTags.value = new Set(data.tags.filter((t:string)=> typeof t==='string'))
       if (Array.isArray(data.statuses)) selectedStatuses.value = data.statuses.filter((s:string)=> typeof s==='string')
       // ignore legacy stored custom columns (feature removed)
-      if (data.productSort === 'asc' || data.productSort === 'desc' || data.productSort === null) productSort.value = data.productSort
+  if (data.productSort === 'asc' || data.productSort === 'desc' || data.productSort === null) productSort.value = data.productSort
     } else {
       // fallback legacy keys
       // skip legacy column key restoration
@@ -283,6 +290,8 @@ function plainCell(p: ProductItem, col: string){
     case 'scenarios': return lang.value==='en'? p.scenariosEn : p.scenariosZh
     case 'capabilities': return lang.value==='en'? p.capabilitiesEn : p.capabilitiesZh
     case 'deploy': return lang.value==='en'? p.deployEn : p.deployZh
+    case 'license': return lang.value==='en'? (p.licenseEn||'') : (p.licenseZh||'')
+    case 'subscription': return lang.value==='en'? (p.subscriptionEn||'') : (p.subscriptionZh||'')
     case 'tags': return p.tags.join(';')
     case 'version': return p.version || ''
     case 'status': return renderStatus(p.status)
@@ -333,7 +342,6 @@ const baseFiltered = computed(() => {
 })
 
 // Product column sorting (by product name only)
-const productSort = ref<'asc'|'desc'|null>(null)
 function toggleProductSort(){
   if (!productSort.value) productSort.value = 'asc'
   else if (productSort.value === 'asc') productSort.value = 'desc'
@@ -344,17 +352,50 @@ const productSortClass = computed(() => {
   return 'pm-sortable active ' + productSort.value
 })
 
+// 自定义标签优先级（越小越靠前），未命中标签使用 999 基数；同权重再按名称
+const TAG_PRIORITY: Record<string, number> = {
+  virtualization: 1,
+  'open-source': 2,
+  hypervisor: 3,
+  multicloud: 4,
+  governance: 5,
+  'control-plane': 6,
+  desktop: 7,
+  workspace: 8,
+  storage: 9,
+  data: 10,
+  orchestration: 11,
+  compute: 12,
+  infrastructure: 13,
+  delivery: 14
+}
+function weightOf(p: ProductItem){
+  let min = 999
+  for (const t of p.tags) {
+    const w = TAG_PRIORITY[t]
+    if (typeof w === 'number' && w < min) min = w
+  }
+  return min
+}
 const filteredProducts = computed(() => {
   const arr = baseFiltered.value.slice()
-  if (productSort.value) {
-    arr.sort((a,b) => {
+  arr.sort((a,b) => {
+    if (productSort.value) {
       const an = (lang.value==='en'? a.nameEn : a.nameZh).toLowerCase()
       const bn = (lang.value==='en'? b.nameEn : b.nameZh).toLowerCase()
       if (an === bn) return 0
       const r = an < bn ? -1 : 1
       return productSort.value === 'asc' ? r : -r
-    })
-  }
+    }
+    // 默认：按标签优先级 + 名称
+    const wa = weightOf(a)
+    const wb = weightOf(b)
+    if (wa !== wb) return wa - wb
+    const an = (lang.value==='en'? a.nameEn : a.nameZh).toLowerCase()
+    const bn = (lang.value==='en'? b.nameEn : b.nameZh).toLowerCase()
+    if (an === bn) return 0
+    return an < bn ? -1 : 1
+  })
   return arr
 })
 
@@ -381,6 +422,8 @@ function renderCell(p: ProductItem, col: string){
     case 'scenarios': return highlight(lang.value==='en'? p.scenariosEn : p.scenariosZh)
     case 'capabilities': return highlight(lang.value==='en'? p.capabilitiesEn : p.capabilitiesZh)
     case 'deploy': return highlight(lang.value==='en'? p.deployEn : p.deployZh)
+    case 'license': return highlight(lang.value==='en'? (p.licenseEn || '') : (p.licenseZh || ''))
+    case 'subscription': return highlight(lang.value==='en'? (p.subscriptionEn || '') : (p.subscriptionZh || ''))
   case 'tags': return p.tags.map(tg => `<span class=\"product-tag\"${lang.value==='zh'?` title=\\"${escapeHtml(tg)}\\"`:''}>${escapeHtml(tagLabel(tg))}</span>`).join(' ')
   case 'version': return p.version ? `<span class=\"pm-badge neutral\">${escapeHtml(p.version)}</span>` : ''
   case 'status': return p.status ? `<span class=\"pm-badge ${p.status?.toLowerCase()}\">${escapeHtml(renderStatus(p.status))}</span>` : ''

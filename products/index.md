@@ -8,6 +8,8 @@ productMatrixColumns:
   - scenarios
   - capabilities
   - deploy
+  - license
+  - subscription
   - tags
 ---
 
@@ -22,7 +24,7 @@ productMatrixColumns:
 ## 产品矩阵
 
 <!-- PRODUCT_MATRIX_START -->
-<ProductMatrix lang="zh" :columns="['name','positioning','scenarios','capabilities','deploy','tags']" />
+<ProductMatrix lang="zh" :columns="['name','positioning','scenarios','capabilities','deploy','license','subscription','tags']" />
 <!-- PRODUCT_MATRIX_END -->
 
 <noscript>

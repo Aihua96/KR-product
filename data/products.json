@@ -14,6 +14,10 @@
     "capabilitiesEn": "Scheduling, image mgmt, network & storage integration, API",
     "deployZh": "独立或与 KRCMP 联合",
     "deployEn": "Standalone or with KRCMP",
+    "licenseZh": "商业发行 (闭源组件+支持)",
+    "licenseEn": "Commercial distribution",
+    "subscriptionZh": "企业技术支持订阅",
+    "subscriptionEn": "Enterprise support subscription",
     "link": "/krvirt/"
   },
   {
@@ -31,6 +35,10 @@
     "capabilitiesEn": "Cluster onboarding, orchestration, quota, monitoring",
     "deployZh": "控制平面部署；可管理 KRVIRT / K8s 等",
     "deployEn": "Control plane managing KRVIRT/K8s",
+    "licenseZh": "商业闭源",
+    "licenseEn": "Commercial",
+    "subscriptionZh": "企业订阅 (含升级)",
+    "subscriptionEn": "Enterprise subscription",
     "link": "/krcmp/"
   },
   {
@@ -48,6 +56,10 @@
     "capabilitiesEn": "Desktop pool, protocol optimization, scaling, policy",
     "deployZh": "依赖虚拟化资源池",
     "deployEn": "Depends on virtualization layer",
+    "licenseZh": "商业闭源",
+    "licenseEn": "Commercial",
+    "subscriptionZh": "企业订阅 (协议优化支持)",
+    "subscriptionEn": "Enterprise subscription",
     "link": "/krdesktop/"
   },
   {
@@ -65,6 +77,10 @@
     "capabilitiesEn": "Multi-protocol, metrics, snapshot/replica",
     "deployZh": "独立或嵌入虚拟化环境",
     "deployEn": "Standalone or embedded",
+    "licenseZh": "商业 (核心+附加组件)",
+    "licenseEn": "Commercial (core + add-ons)",
+    "subscriptionZh": "企业订阅 (含监控/热补丁)",
+    "subscriptionEn": "Enterprise subscription",
     "link": "/krstorage/"
   }
   ,{
@@ -82,6 +98,10 @@
     "capabilitiesEn": "KVM+LXC, HA, live migration, Ceph/ZFS, backup",
     "deployZh": "单节点起步，平滑扩展多节点集群",
     "deployEn": "Single node to multi-node cluster",
+    "licenseZh": "开源 (AGPLv3)",
+    "licenseEn": "Open Source (AGPLv3)",
+    "subscriptionZh": "企业商业支持订阅 (可选)",
+    "subscriptionEn": "Optional enterprise support subscription",
     "link": "/products/proxmox-ve"
   }
 ]
