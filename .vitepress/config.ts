@@ -78,7 +78,8 @@ export default defineConfig({
           { text: 'KRStorage 存储管理系统', link: '/products/krstorage' }
         ]
       },
-      { text: '解决方案', link: '/solutions/', activeMatch: '^/solutions/' },
+  { text: '解决方案', link: '/solutions/', activeMatch: '^/solutions/' },
+  { text: '价格', link: '/pricing/', activeMatch: '^/pricing/' },
         { text: '合作伙伴', link: '/partners/', activeMatch: '^/partners/' },
       {
         text: '帮助中心',
@@ -263,6 +264,20 @@ export default defineConfig({
           text: '最佳实践',
           collapsed: true,
           items: [ { text: '最佳实践', link: '/krstorage/best-practices/' } ]
+        }
+      ],
+      '/pricing/': [
+        {
+          text: '定价概览',
+          collapsed: false,
+          items: [
+            { text: '概览', link: '/pricing/' },
+            { text: '版本与分层', link: '/pricing/editions' },
+            { text: '桌面与图形版', link: '/pricing/desktop' },
+            { text: 'AI 套件', link: '/pricing/ai-suite' },
+            { text: '增强套件', link: '/pricing/addons' },
+            { text: '价格 FAQ', link: '/pricing/faq' }
+          ]
         }
       ]
     },

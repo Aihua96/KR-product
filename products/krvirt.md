@@ -6,6 +6,8 @@ lastUpdated: true
 
 # KRVIRT 虚拟化平台
 
+<PriceButton />
+
 > 本页内容由原产品站点 /krvirt/ 概览整合，仅用于“产品介绍”模块集中展示。
 
 
