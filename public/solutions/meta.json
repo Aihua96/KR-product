@@ -12,7 +12,7 @@
       "兼容测试",
       "迁移"
     ],
-    "updated": "2025-09-28T05:05:16.000Z",
+    "updated": "2025-09-30T03:34:06.031Z",
     "path": "/solutions/xinchuang-adaptation",
     "contact": true
   },
@@ -30,7 +30,7 @@
       "策略统一",
       "成本计量"
     ],
-    "updated": "2025-09-28T05:05:16.000Z",
+    "updated": "2025-09-30T03:34:06.006Z",
     "path": "/solutions/unified-cloud",
     "contact": true
   },
@@ -47,8 +47,19 @@
       "安全接入",
       "远程运维"
     ],
-    "updated": "2025-09-28T05:52:26.000Z",
+    "updated": "2025-09-30T03:34:06.031Z",
     "path": "/solutions/mobile-emergency",
+    "contact": true
+  },
+  {
+    "schemaVersion": 2,
+    "id": "intelligent-compute-platform",
+    "title": "智能算力平台方案",
+    "category": "场景",
+    "industries": [],
+    "tags": [],
+    "updated": "2025-09-30T07:55:02.088Z",
+    "path": "/solutions/intelligent-compute-platform",
     "contact": true
   },
   {
@@ -58,7 +69,7 @@
     "category": "场景",
     "industries": [],
     "tags": [],
-    "updated": "2025-09-28T05:05:16.000Z",
+    "updated": "2025-09-30T03:34:06.003Z",
     "path": "/solutions/multi-cloud-scheduling",
     "contact": true
   },
@@ -75,7 +86,7 @@
       "缓存",
       "调度"
     ],
-    "updated": "2025-09-28T05:05:16.000Z",
+    "updated": "2025-09-30T03:34:06.006Z",
     "path": "/solutions/nerf-compute",
     "contact": true
   }

@@ -79,6 +79,7 @@ export default defineConfig({
         ]
       },
   { text: '解决方案', link: '/solutions/', activeMatch: '^/solutions/' },
+  { text: '客户案例', link: '/cases/', activeMatch: '^/cases/' },
   { text: '价格', link: '/pricing/', activeMatch: '^/pricing/' },
         { text: '合作伙伴', link: '/partners/', activeMatch: '^/partners/' },
       {

@@ -6,6 +6,8 @@
   --kr-matrix-border: #e2e8f0;
   --kr-matrix-accent: #2563eb;
   --kr-matrix-shadow: 0 2px 4px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+  /* 扩宽内容区域：默认主题 ~960-1184，现放宽到 1440 */
+  --vp-layout-max-width: 1440px;
 }
 
 /* Unified updated timestamp block */

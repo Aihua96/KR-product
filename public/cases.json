@@ -1,0 +1,92 @@
+[
+  {
+    "id": "virt-001",
+    "title": "某科研机构 GPU 虚拟化集群",
+    "project": "科研算力资源池建设",
+    "type": "virtualization",
+    "cover": "/proxmox-logo.png",
+    "summary": "通过 KRVIRT + Proxmox 构建混合 GPU 资源池，提升利用率 35%。",
+    "link": "/cases/virtualization-sample"
+  },
+  {
+    "id": "desktop-001",
+    "title": "设计部门云桌面集中交付",
+    "project": "三维建模协同办公平台",
+    "type": "desktop",
+    "cover": "/qrcode-wechat.jpg",
+    "summary": "统一交付高性能图形云桌面，终端运维成本下降 40%。",
+    "link": "/cases/desktop-sample"
+  },
+  {
+    "id": "storage-001",
+    "title": "对象+块混合存储统一管理",
+    "project": "多协议数据资源中台",
+    "type": "storage",
+    "cover": "/proxmox-logo-black.png",
+    "summary": "构建集中式存储底座，支撑多业务数据一致管理。",
+    "link": "/cases/storage-sample"
+  },
+  {
+    "id": "other-001",
+    "title": "异构算力统一调度 PoC",
+    "project": "AI & NeRF 训练资源调度",
+    "type": "other",
+    "cover": "/KRlogo.svg",
+    "summary": "调度 CPU/GPU/大显存节点，实现按需弹性分配。",
+    "link": "/cases/other-sample"
+  },
+  {
+    "id": "virt-002",
+    "title": "高校私有云虚拟化迁移",
+    "project": "教学与科研混合云平台",
+    "type": "virtualization",
+    "cover": "/proxmox-logo.png",
+    "summary": "将分散物理服务器集中虚拟化，教学实验环境快速复原。",
+    "link": "/cases/virtualization-sample"
+  },
+  {
+    "id": "desktop-002",
+    "title": "呼叫中心远程坐席云桌面",
+    "project": "全域客服远程办公体系",
+    "type": "desktop",
+    "cover": "/qrcode-wechat.jpg",
+    "summary": "桌面秒级开通，席位弹性伸缩，安全合规集中管控。",
+    "link": "/cases/desktop-sample"
+  },
+  {
+    "id": "storage-002",
+    "title": "影像归档分层存储优化",
+    "project": "医疗影像数据生命周期管理",
+    "type": "storage",
+    "cover": "/proxmox-logo-black.png",
+    "summary": "冷热分层与压缩去重结合，整体存储成本下降 28%。",
+    "link": "/cases/storage-sample"
+  },
+  {
+    "id": "other-002",
+    "title": "混合算力批处理加速",
+    "project": "图像渲染与模型训练调度平台",
+    "type": "other",
+    "cover": "/KRlogo.svg",
+    "summary": "利用空闲 GPU 时隙执行批处理，吞吐提升 22%。",
+    "link": "/cases/other-sample"
+  },
+  {
+    "id": "virt-003",
+    "title": "制造业 OT 环境虚拟化隔离",
+    "project": "工控仿真与测试沙箱",
+    "type": "virtualization",
+    "cover": "/proxmox-logo.png",
+    "summary": "生产与测试逻辑隔离，故障演练不影响生产线。",
+    "link": "/cases/virtualization-sample"
+  },
+  {
+    "id": "storage-003",
+    "title": "大数据湖统一元数据接入",
+    "project": "多源数据治理与共享平台",
+    "type": "storage",
+    "cover": "/proxmox-logo-black.png",
+    "summary": "对象/块/文件三类数据统一登记与权限审计。",
+    "link": "/cases/storage-sample"
+  }
+]

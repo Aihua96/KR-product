@@ -1,0 +1,9 @@
+<svg width="160" height="120" viewBox="0 0 160 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="image fallback">
+  <rect width="160" height="120" rx="8" fill="#F3F4F6"/>
+  <g stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M50 80l18-22 14 16 14-18 14 20"/>
+    <circle cx="62" cy="52" r="6"/>
+    <rect x="32" y="32" width="96" height="56" rx="6"/>
+  </g>
+  <text x="80" y="108" font-size="10" text-anchor="middle" fill="#9CA3AF" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen">No Image</text>
+</svg>
